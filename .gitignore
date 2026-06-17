@@ -1,0 +1,52 @@
+# Secrets
+.env
+
+# Virtual environment
+.venv/
+venv/
+
+# Mac files
+.DS_Store
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data files - do not push actual data
+data/raw/**
+data/cleaned/**
+data/processed/**
+data/indexes/**
+
+# Keep empty data folders
+!data/raw/**/.gitkeep
+!data/cleaned/**/.gitkeep
+!data/processed/**/.gitkeep
+!data/indexes/**/.gitkeep
+
+# Experiment outputs
+experiments/single_agent_results/**
+experiments/multi_agent_results/**
+
+# Keep empty experiment folders
+!experiments/single_agent_results/.gitkeep
+!experiments/multi_agent_results/.gitkeep
+
+# Generated files / indexes
+*.faiss
+*.pkl
+*.joblib
+*.npy
+*.npz
+
+# Logs
+*.log
+logs/
+
+# IDE settings
+.vscode/
