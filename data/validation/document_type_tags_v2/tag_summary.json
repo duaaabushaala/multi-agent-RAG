@@ -1,0 +1,29 @@
+{
+  "corpus_records_tagged": 219,
+  "tagging_status": "revised_candidate_tags_pending_manual_audit",
+  "text_extraction_method": "Only text after the DESCRIPTIVE TEXT marker was used for personal-history tagging.",
+  "personal_history_rule": "At least one direct biographical, service, or war-outcome signal was required. Generic military/family references could not create this tag alone.",
+  "tag_counts": {
+    "personal_history": 196,
+    "written_materials": 151,
+    "visual_object_materials": 178
+  },
+  "tag_combination_counts": {
+    "personal_history": 6,
+    "personal_history + visual_object_materials": 52,
+    "personal_history + written_materials": 29,
+    "personal_history + written_materials + visual_object_materials": 109,
+    "visual_object_materials": 10,
+    "written_materials": 6,
+    "written_materials + visual_object_materials": 7
+  },
+  "records_with_no_candidate_tags": 0,
+  "record_ids_with_no_candidate_tags": [],
+  "audit_sample_size": 21,
+  "audit_sampling_method": "Up to three random records per tag combination, then random records to fill the target sample size.",
+  "random_seed": 20260629,
+  "outputs": {
+    "all_candidate_tags": "data/validation/document_type_tags_v2/record_document_type_tags.csv",
+    "manual_audit_sample": "data/validation/document_type_tags_v2/tag_audit_sample.csv"
+  }
+}

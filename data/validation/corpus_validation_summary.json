@@ -1,0 +1,44 @@
+{
+  "selection": {
+    "raw_exploratory_records": 300,
+    "records_with_english_description": 265,
+    "candidate_records": 230,
+    "final_working_corpus_records": 220,
+    "selection_rule": "English descriptive metadata, rights information, and at least 40 words in the main narrative field."
+  },
+  "story_text": {
+    "count": 220,
+    "minimum": 40,
+    "p25": 75.75,
+    "median": 122.5,
+    "p75": 191.0,
+    "maximum": 934,
+    "mean": 154.41
+  },
+  "materials_text": {
+    "records_with_any_materials": 200,
+    "records_with_5_plus_words": 179,
+    "records_with_meaningful_materials": 114,
+    "summary_non_empty": {
+      "count": 200,
+      "minimum": 1,
+      "p25": 10.0,
+      "median": 23.0,
+      "p75": 40.25,
+      "maximum": 197,
+      "mean": 30.47
+    }
+  },
+  "integrity": {
+    "missing_title": 0,
+    "missing_story_text": 0,
+    "missing_rights": 0,
+    "missing_europeana_url": 0,
+    "possible_duplicate_pairs": 1
+  },
+  "manual_review": {
+    "sample_size": 12,
+    "random_seed": 20260628,
+    "stratification": "4 short, 4 medium and 4 long narratives where available."
+  }
+}

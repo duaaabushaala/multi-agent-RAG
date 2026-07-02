@@ -1,0 +1,11 @@
+[project]
+name = "multi-agent-rag-cultural-heritage"
+version = "0.1.0"
+description = "A comparison of single-agent and multi-agent RAG for cultural heritage retrieval."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pandas>=3.0.4",
+    "python-dotenv>=1.2.2",
+    "requests>=2.34.2",
+]

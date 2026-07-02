@@ -1,4 +1,5 @@
 # scripts/normalise_europeana.py
+# Turned raw Europeana JSON into clean rows/fields and produced the 230 candidate records
 
 import csv
 import json
@@ -25,8 +26,7 @@ ALL_RECORDS_CSV = OUTPUT_DIR / "ww1_exploration_normalised_all.csv"
 ENGLISH_CANDIDATES_CSV = OUTPUT_DIR / "ww1_exploration_english_candidates.csv"
 PROFILE_JSON = OUTPUT_DIR / "ww1_exploration_profile.json"
 
-# A record needs at least this many English metadata words
-# before we consider it worth manually inspecting.
+# A record needs at least 40 English metadata words before we consider it worth manually inspecting.
 MIN_ENGLISH_WORDS_FOR_CANDIDATE = 40
 
 
@@ -59,10 +59,6 @@ def text_list(value: Any) -> list[str]:
     """
     Return a cleaned list of non-empty text values.
 
-    Examples:
-    - ["one", "two"] stays as a list
-    - "one" becomes ["one"]
-    - None becomes []
     """
     if value is None:
         return []
