@@ -5,6 +5,9 @@ description = "A comparison of single-agent and multi-agent RAG for cultural her
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "faiss-cpu>=1.14.3",
+    "google-genai>=2.10.0",
+    "numpy>=2.5.0",
     "pandas>=3.0.4",
     "python-dotenv>=1.2.2",
     "requests>=2.34.2",
